@@ -1,5 +1,7 @@
 
-Module['preRun'] = function()
-{
-   console.log('prerun');
-};
+Module['preInit'] = [
+  function()
+  {
+    console.log('preInit');
+  },
+];

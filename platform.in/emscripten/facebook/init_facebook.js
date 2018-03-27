@@ -3,5 +3,4 @@ var Module = {
   {
     console.log('prerun');
   },
-  'noInitialRun': true,
 };

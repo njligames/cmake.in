@@ -4,7 +4,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon-32x32.ico"/>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Emscripten-Generated Code</title>
+  <title>%EXECUTABLE_NAME%</title>
   <style>
   .emscripten { padding-right: 0; margin-left: auto; margin-right: auto; display: block; }
   textarea.emscripten { font-family: monospace; width: 80%; }
@@ -60,10 +60,6 @@
 <div class="emscripten" id="status">Downloading...</div>
 <div class="emscripten_border" id="gameArea">
   <canvas class="emscripten" id="gameCanvas" oncontextmenu="event.preventDefault()"></canvas>
-  <fb:login-button
-    scope="public_profile,email"
-    onlogin="checkLoginState();">
-  </fb:login-button>
 </div>
 <script type='text/javascript'>
 

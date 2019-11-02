@@ -57,6 +57,8 @@
   </style>
 </head>
 <body>
+    <script src="https://connect.facebook.net/en_US/fbinstant.6.2.js"></script>
+  <script src="./fbLoader.js"></script>
 <div class="emscripten" id="status">Downloading...</div>
 <div class="emscripten_border" id="gameArea">
   <canvas class="emscripten" id="gameCanvas" oncontextmenu="event.preventDefault()"></canvas>

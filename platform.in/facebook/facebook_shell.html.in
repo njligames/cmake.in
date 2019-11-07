@@ -69,6 +69,13 @@
 </div>
 <script type='text/javascript'>
 
+    function resizeGame2() {
+        var newWidth = window.innerWidth *  window.devicePixelRatio;
+        var newHeight = window.innerHeight *  window.devicePixelRatio;
+        var gameCanvas = document.getElementById('gameCanvas');
+        gameCanvas.width = newWidth;
+        gameCanvas.height = newHeight;
+    }
 function resizeGame() {
     var gameArea = document.getElementById('gameArea');
     var widthToHeight = 16 / 9;
@@ -99,7 +106,7 @@ var statusElement = document.getElementById('status');
 var Module = {
   preRun: [
     function() {
-      resizeGame();
+      resizeGame2();
     }],
   print: (function() {
     var element = document.getElementById('output');
@@ -168,8 +175,8 @@ window.onerror = function() {
 
 
 
-window.addEventListener('resize', resizeGame, false);
-window.addEventListener('orientationchange', resizeGame, false);
+window.addEventListener('resize', resizeGame2, false);
+window.addEventListener('orientationchange', resizeGame2, false);
 
 </script>
 {{{ SCRIPT }}}
